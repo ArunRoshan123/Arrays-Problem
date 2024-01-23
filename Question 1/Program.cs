@@ -10,6 +10,26 @@ namespace Question_1
     {
         static void Main(string[] args)
         {
+            int[] arr = { 1, 2, 3, 3, 4, 2, 1, 5, 8 };
+            int count;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                count = 0;
+                for (int j = 0; j < arr.Length; j++)
+                {
+                    if (arr[i] == arr[j])
+                    {
+                        count++;
+                    }
+                }
+                if (count > 1)
+                {
+
+                    Console.WriteLine($"{arr[i]} is {count} times;");
+                }
+            }
+            Console.ReadLine();
         }
     }
 }
